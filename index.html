@@ -4,20 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            font-family:'Segoe UI', Tahoma, Verdana, sans-serif
+        }
+    </style>
 </head>
 <body>
     
-    <button onclick="startTheGame()">Try it</button>
+
+    <button id="rock">Rock</button>
+    <button id="paper">Paper</button>
+    <button id="scissors">Scissors</button>
+
+
+    <p>Computer Score: <span id="comscore">0</span></p>
+    <p>Player Score: <span id="plascore">0</span></p> <br><br>
 
     <p id="demo"></p>
     <p id="pc1"></p>
-    
-    <div id="rock"><h2>Rock</h2></div>
-    <div id="paper"><h2>Paper</h2></div>
-    <div id="scissors"><h2>Scissors</h2></div>
-    
-    <p>Computer Score: <span id="comscore"></span></p>
-    <p>Player Score: <span id="plascore"></span></p>
+
+    <h3 id="bayern"></h3>
     
     
     <h1 id="announcer"></h1>
