@@ -20,6 +20,9 @@ function resetTheGame() {
   document.getElementById("demo").innerHTML = "";
   document.getElementById("pc1").innerHTML = "";
   document.getElementById("bayern").innerHTML = "";
+  document.getElementById("scissors").disabled = false;
+  document.getElementById("rock").disabled = false;
+  document.getElementById("paper").disabled = false;
 }
 
 document.getElementById("rock").addEventListener("click", () => {
