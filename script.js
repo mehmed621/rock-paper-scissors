@@ -2,6 +2,10 @@ let computerScore = 0;
 let playerScore = 0;
 document.getElementById("restartall").style.display = "none";
 
+
+console.log("rps-ui branch")
+
+
 function getComputerChoice() {
     let num = Math.ceil(Math.random() * 3);
     let result = num === 1 ? "rock" : num === 2 ? "paper" : "scissors";
