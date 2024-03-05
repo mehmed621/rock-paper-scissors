@@ -23,7 +23,7 @@ function resetTheGame() {
   document.getElementById("announcer").innerHTML = "";
   document.getElementById("demo").innerHTML = "";
   document.getElementById("pc1").innerHTML = "";
-  document.getElementById("bayern").innerHTML = "";
+  document.getElementById("h3h3").innerHTML = "";
   document.getElementById("scissors").disabled = false;
   document.getElementById("rock").disabled = false;
   document.getElementById("paper").disabled = false;
@@ -34,17 +34,17 @@ document.getElementById("rock").addEventListener("click", () => {
   document.getElementById("demo").innerHTML = "You choose Rock";
   document.getElementById("pc1").innerHTML = "Computer has chosen " + ccc;
   if (ccc === "rock") {
-    document.getElementById("bayern").innerHTML = "It's a Tie!";
+    document.getElementById("h3h3").innerHTML = "It's a Tie!";
   }
 
   if (ccc === "paper") {
-    document.getElementById("bayern").innerHTML = "You lose! Paper beats Rock.";
+    document.getElementById("h3h3").innerHTML = "You lose! Paper beats Rock.";
     computerScore++;
     document.getElementById("comscore").innerHTML = computerScore;
   }
 
   if (ccc === "scissors") {
-    document.getElementById("bayern").innerHTML =
+    document.getElementById("h3h3").innerHTML =
       "You win! Rock beats Scissors.";
     playerScore++;
     document.getElementById("plascore").innerHTML = playerScore;
@@ -58,18 +58,18 @@ document.getElementById("scissors").addEventListener("click", () => {
   document.getElementById("demo").innerHTML = "You choose Scissors";
   document.getElementById("pc1").innerHTML = "Computer has chosen " + ccc;
   if (ccc === "scissors") {
-    document.getElementById("bayern").innerHTML = "It's a Tie!";
+    document.getElementById("h3h3").innerHTML = "It's a Tie!";
   }
 
   if (ccc === "rock") {
-    document.getElementById("bayern").innerHTML =
+    document.getElementById("h3h3").innerHTML =
       "You lose! Rock beats Scissors.";
     computerScore++;
     document.getElementById("comscore").innerHTML = computerScore;
   }
 
   if (ccc === "paper") {
-    document.getElementById("bayern").innerHTML =
+    document.getElementById("h3h3").innerHTML =
       "You win! Scissors beats Paper.";
     playerScore++;
     document.getElementById("plascore").innerHTML = playerScore;
@@ -83,18 +83,18 @@ document.getElementById("paper").addEventListener("click", () => {
   document.getElementById("demo").innerHTML = "You choose Paper";
   document.getElementById("pc1").innerHTML = "Computer has chosen " + ccc;
   if (ccc === "paper") {
-    document.getElementById("bayern").innerHTML = "It's a Tie!";
+    document.getElementById("h3h3").innerHTML = "It's a Tie!";
   }
 
   if (ccc === "scissors") {
-    document.getElementById("bayern").innerHTML =
+    document.getElementById("h3h3").innerHTML =
       "You lose! Scissors beats Paper.";
     computerScore++;
     document.getElementById("comscore").innerHTML = computerScore;
   }
 
   if (ccc === "rock") {
-    document.getElementById("bayern").innerHTML = "You win! Paper beats Rock.";
+    document.getElementById("h3h3").innerHTML = "You win! Paper beats Rock.";
     playerScore++;
     document.getElementById("plascore").innerHTML = playerScore;
   }
